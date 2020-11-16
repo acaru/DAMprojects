@@ -117,7 +117,9 @@ public class GestorEventos implements ActionListener {
 							ventana.getEtiquetaResultado().setText("Resultado: " + cubica);
 							ReproducirSonido("batman-ringtones.wav");
 					    } else {
+					    	ventana.setTitle("VUELVE A INTENTARLO");
 							ventana.getEtiquetaResultado().setText("Password incorrecta");
+							ventana.getEtiquetaResultado().setForeground(Color.RED);
 							ReproducirSonido("joker.wav");
 					    }
 					    ventana.getCaja1().requestFocus();
